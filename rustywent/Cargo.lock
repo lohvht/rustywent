@@ -3,10 +3,3 @@
 [[package]]
 name = "rustywent"
 version = "0.1.0"
-dependencies = [
- "wentcore",
-]
-
-[[package]]
-name = "wentcore"
-version = "0.1.0"
