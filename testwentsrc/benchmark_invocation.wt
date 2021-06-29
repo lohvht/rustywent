@@ -1,0 +1,73 @@
+// This benchmark stresses just method invocation.
+
+type Foo object{
+  func method0() ::> '0'
+  func method1() ::> '1'
+  func method2() ::> '2'
+  func method3() ::> '3'
+  func method4() ::> '4'
+  func method5() ::> '5'
+  func method6() ::> '6'
+  func method7() ::> '7'
+  func method8() ::> '8'
+  func method9() ::> '9'
+  func method10() ::> '0'
+  func method11() ::> '1'
+  func method12() ::> '2'
+  func method13() ::> '3'
+  func method14() ::> '4'
+  func method15() ::> '5'
+  func method16() ::> '6'
+  func method17() ::> '7'
+  func method18() ::> '8'
+  func method19() ::> '9'
+  func method20() ::> '0'
+  func method21() ::> '1'
+  func method22() ::> '2'
+  func method23() ::> '3'
+  func method24() ::> '4'
+  func method25() ::> '5'
+  func method26() ::> '6'
+  func method27() ::> '7'
+  func method28() ::> '8'
+  func method29() ::> '9'
+}
+
+foo := Foo()
+start := clock()
+i := 0
+for i < 500000 {
+  foo.method0()
+  foo.method1()
+  foo.method2()
+  foo.method3()
+  foo.method4()
+  foo.method5()
+  foo.method6()
+  foo.method7()
+  foo.method8()
+  foo.method9()
+  foo.method10()
+  foo.method11()
+  foo.method12()
+  foo.method13()
+  foo.method14()
+  foo.method15()
+  foo.method16()
+  foo.method17()
+  foo.method18()
+  foo.method19()
+  foo.method20()
+  foo.method21()
+  foo.method22()
+  foo.method23()
+  foo.method24()
+  foo.method25()
+  foo.method26()
+  foo.method27()
+  foo.method28()
+  foo.method29()
+  i = i + 1
+}
+
+print clock() - start;

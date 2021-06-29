@@ -1,0 +1,30 @@
+type Tree object (depth, a, b, c, d, e) {
+  func walk() {
+    if (self.depth == 0) { return 0; }
+    return self.depth 
+        + self.a.walk()
+        + self.b.walk()
+        + self.c.walk()
+        + self.d.walk()
+        + self.e.walk();
+  }
+}
+
+func createTree(depth) {
+    if depth > 0 {
+        Tree(depth, createTree(depth - 1), createTree(depth - 1), createTree(depth - 1), createTree(depth - 1), createTree(depth - 1))
+    } else {
+        Tree(depth, null, null, null, null, null)
+    }
+}
+
+start := clock()
+tree := createTree(8)
+
+print "TREE INSTANTIATED SECS:"
+print clock() - start
+
+for i := 0; i < 100; i = i + 1 {
+  if tree.walk() != 122068 { print "Error"; }
+}
+print clock() - start

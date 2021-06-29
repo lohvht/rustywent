@@ -1,0 +1,28 @@
+type Zoo object(aarvark, baboon, cat, donkey, elephant, fox) {
+  func ant()    { return self.aarvark; }
+  func banana() { return self.baboon; }
+  func tuna()   { return self.cat; }
+  func hay()    { return self.donkey; }
+  func grass()  { return self.elephant; }
+  func mouse()  { return self.fox; }
+}
+
+zoo := Zoo(1, 1, 1, 1, 1, 1)
+sum := 0
+start := clock()
+batch := 0
+for clock() - start < 10 {
+  for i := 0; i < 10000; i = i + 1 {
+    sum = sum +
+      zoo.ant() +
+      zoo.banana() +
+      zoo.tuna() +
+      zoo.hay() +
+      zoo.grass() +
+      zoo.mouse()
+  }
+}
+
+print sum
+print batch
+print clock() - start

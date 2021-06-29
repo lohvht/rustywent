@@ -1,0 +1,30 @@
+type Toggle object(state) {
+  func value() ::> self.state
+
+  func activate() {
+    self.state = not self.state
+    return self
+  }
+}
+
+start := clock()
+n := 100000
+val := true
+toggle := Toggle(val)
+
+for i := 0; i < n; i = i + 1 {
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+  val = toggle.activate().value()
+}
+
+print toggle.value()
+
+print clock() - start;

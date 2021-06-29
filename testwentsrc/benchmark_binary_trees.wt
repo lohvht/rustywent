@@ -1,0 +1,69 @@
+type Tree object(item, depth, left, right) {
+    func check() {
+        if self.left == null {
+            return self.item
+        }
+        return self.item + self.left.check() - self.right.check()
+    }
+}
+
+func initTree(item, depth) {
+    if depth > 0 {
+        item2 := item + item
+        depth = depth - 1
+        left := initTree(item2 - 1, depth)
+        right := initTree(item2, depth)
+        Tree(item, depth, left, right)
+    } else {
+        Tree(item, depth, null, null)
+    }
+}
+
+minDepth := 4
+maxDepth := 14
+stretchDepth := maxDepth + 1
+
+start := clock()
+
+print "stretch tree of depth:"
+print stretchDepth
+print "check:"
+t := initTree(0, stretchDepth)
+print t.check()
+
+longLivedTree := initTree(0, maxDepth)
+
+// iterations = 2 ** maxDepth
+iterations := 1
+d := 0
+for d < maxDepth {
+  iterations = iterations * 2
+  d = d + 1
+}
+
+depth := minDepth
+for depth < stretchDepth {
+  check := 0
+  i := 1
+  for i <= iterations {
+    check = check + initTree(i, depth).check() + initTree(-i, depth).check()
+    i = i + 1
+  }
+
+  print "num trees:"
+  print iterations * 2
+  print "depth:"
+  print depth
+  print "check:"
+  print check
+
+  iterations = iterations / 4
+  depth = depth + 2
+}
+
+print "long lived tree of depth:"
+print maxDepth
+print "check:"
+print longLivedTree.check()
+print "elapsed:"
+print clock() - start

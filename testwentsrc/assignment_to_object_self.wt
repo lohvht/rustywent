@@ -1,0 +1,7 @@
+type Foo object {
+    func test() {
+        self = 'value' // Error at '=', invalid assignment
+    }
+}
+
+Foo()
