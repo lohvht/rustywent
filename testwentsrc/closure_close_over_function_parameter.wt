@@ -1,0 +1,12 @@
+f := null
+
+func foo(param) {
+    func f_() {
+        print param
+    }
+    f = f_
+}
+
+foo('param')
+
+f() // expect: param

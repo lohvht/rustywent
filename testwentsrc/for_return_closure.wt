@@ -1,0 +1,10 @@
+func f() {
+    for {
+        i := 'i'
+        func g() { print i; }
+        return g
+    }
+}
+
+h := f()
+h() // expect: i

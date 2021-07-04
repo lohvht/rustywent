@@ -1,0 +1,16 @@
+type Foo object {
+  func method(a) {
+    print "method"
+    print a
+  }
+  func other(a) {
+    print "other"
+    print a
+  }
+}
+
+foo := Foo()
+method := foo.method
+
+// Setting method property should be illegal
+foo.method = foo.other // illegal property set over name 'method' that is not defined

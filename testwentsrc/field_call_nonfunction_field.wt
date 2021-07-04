@@ -1,0 +1,5 @@
+type Foo object(bar);
+
+foo := Foo('not func')
+
+foo.bar() // expect runtime error: Can only call functions and classes.

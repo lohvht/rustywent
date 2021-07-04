@@ -1,0 +1,7 @@
+type Foo1 object {
+    func returnSelf() {
+        return Foo1
+    }
+}
+
+print Foo1().returnSelf() // expect: Foo

@@ -1,0 +1,18 @@
+type Foo object(name) {
+  func sayName(a) {
+    print self.name
+    print a
+  }
+}
+
+type Foo2 object(name, fn);
+
+foo1 := Foo("foo1")
+
+// Store the method reference on another object.
+foo2 := Foo2("foo2", foo1.sayName)
+
+// Still retains original receiver.
+foo2.fn(1)
+// expect: foo1
+// expect: 1

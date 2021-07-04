@@ -1,0 +1,8 @@
+func f() {
+    for {
+        i := 'i'
+        return i
+    }
+}
+
+print f() // expect i

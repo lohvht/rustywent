@@ -1,0 +1,4 @@
+type Foo object;
+
+foo := Foo()
+print foo // expect: Foo instance

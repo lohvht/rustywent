@@ -1,0 +1,8 @@
+type A object;
+
+func f() {
+    type B object;
+    return B;
+}
+
+print f() // expect: B

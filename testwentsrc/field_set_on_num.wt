@@ -1,0 +1,1 @@
+1.bar = 'false'; // expect runtime error: Only instances have fields.

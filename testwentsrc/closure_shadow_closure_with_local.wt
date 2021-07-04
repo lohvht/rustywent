@@ -1,0 +1,12 @@
+{
+  foo := "closure"
+  func f() {
+    {
+      print foo // expect: closure
+      foo := "shadow"
+      print foo // expect: shadow
+    }
+    print foo // expect: closure
+  }
+  f()
+}

@@ -1,0 +1,47 @@
+func print_expr(c) {
+    print(c)
+}
+
+print "COMPOUND SHORT BODY"
+
+// Compound short body with one expression
+for c := 0; c < 3; c = c + 1 ::> print_expr(c)
+
+print "BLOCK BODY"
+
+// Block body
+for c := 0; c < 3; c = c + 1 {
+    print c
+}
+
+func foo() {
+    // No clauses, its a for loop that will run forever
+    for {
+        return 'done'
+    }
+}
+
+print "FOR-INFINITE LOOP"
+print foo()
+
+i := 0
+// "do-while" for loop
+
+print "DO-WHILE FOR LOOP"
+for i < 2; i = i + 1 ::> print_expr(i)
+
+print "WHILE FOR LOOP"
+
+i = 0
+for i < 2 {
+    print i
+    i = i + 1
+}
+
+// bodies with compound expressions
+for false ::> if true ::> 1 else ::> 2
+for false ::> for ::> 1
+for false ::> for ::> { 1; }
+for false ::> func(c) ::> c
+
+// TODO: Add break returns, else for not found value, syntax demo for for-loop expressions

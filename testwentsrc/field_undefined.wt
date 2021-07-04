@@ -1,0 +1,4 @@
+type Foo object;
+foo := Foo()
+
+foo.bar; // expect runtime error: Undefined property 'bar'.

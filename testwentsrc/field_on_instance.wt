@@ -1,0 +1,6 @@
+type Foo object(bar, baz);
+
+foo := Foo("bar value", "baz value")
+
+print foo.bar; // expect: bar value
+print foo.baz; // expect: baz value

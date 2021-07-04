@@ -1,0 +1,7 @@
+{
+    local := 'local'
+    func f() {
+        print local // expect: local
+    }
+    f()
+}
