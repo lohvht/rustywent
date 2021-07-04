@@ -1,0 +1,4 @@
+func printFn(a) { print a; }
+
+if true ::> if false ::> printFn('bad') else ::> printFn('good') // expect: good
+if false ::> if true ::> printFn('bad') else ::> printFn('bad')

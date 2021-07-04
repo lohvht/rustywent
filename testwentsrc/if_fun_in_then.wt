@@ -1,0 +1,3 @@
+// Allowed, funcs are expressions in went
+fn := if true ::> func foo() ::> '1234'
+print fn()

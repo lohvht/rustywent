@@ -1,0 +1,5 @@
+func isEven(n) ::> if n == 0 ::> true else ::> isOdd(n - 1) // expect runtime error: Undefined variable 'isOdd'.
+func isOdd(n) ::> if n == 0 ::> false else ::> isEven(n - 1)
+
+print isEven(4)
+print isOdd(5)

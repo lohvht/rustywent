@@ -1,0 +1,5 @@
+type Foo object {
+  func method() ::> ''
+}
+foo := Foo()
+print foo.method // expect: <fn method>

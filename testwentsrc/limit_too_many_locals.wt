@@ -1,0 +1,55 @@
+func f() {
+  // var v00 First slot already taken.
+
+v01 := null; v02 := null; v03 := null; v04 := null; v05 := null; v06 := null; v07 := null;
+v08 := null; v09 := null; v0a := null; v0b := null; v0c := null; v0d := null; v0e := null; v0f := null;
+
+v10 := null; v11 := null; v12 := null; v13 := null; v14 := null; v15 := null; v16 := null; v17 := null;
+v18 := null; v19 := null; v1a := null; v1b := null; v1c := null; v1d := null; v1e := null; v1f := null;
+
+v20 := null; v21 := null; v22 := null; v23 := null; v24 := null; v25 := null; v26 := null; v27 := null;
+v28 := null; v29 := null; v2a := null; v2b := null; v2c := null; v2d := null; v2e := null; v2f := null;
+
+v30 := null; v31 := null; v32 := null; v33 := null; v34 := null; v35 := null; v36 := null; v37 := null;
+v38 := null; v39 := null; v3a := null; v3b := null; v3c := null; v3d := null; v3e := null; v3f := null;
+
+v40 := null; v41 := null; v42 := null; v43 := null; v44 := null; v45 := null; v46 := null; v47 := null;
+v48 := null; v49 := null; v4a := null; v4b := null; v4c := null; v4d := null; v4e := null; v4f := null;
+
+v50 := null; v51 := null; v52 := null; v53 := null; v54 := null; v55 := null; v56 := null; v57 := null;
+v58 := null; v59 := null; v5a := null; v5b := null; v5c := null; v5d := null; v5e := null; v5f := null;
+
+v60 := null; v61 := null; v62 := null; v63 := null; v64 := null; v65 := null; v66 := null; v67 := null;
+v68 := null; v69 := null; v6a := null; v6b := null; v6c := null; v6d := null; v6e := null; v6f := null;
+
+v70 := null; v71 := null; v72 := null; v73 := null; v74 := null; v75 := null; v76 := null; v77 := null;
+v78 := null; v79 := null; v7a := null; v7b := null; v7c := null; v7d := null; v7e := null; v7f := null;
+
+v80 := null; v81 := null; v82 := null; v83 := null; v84 := null; v85 := null; v86 := null; v87 := null;
+v88 := null; v89 := null; v8a := null; v8b := null; v8c := null; v8d := null; v8e := null; v8f := null;
+
+v90 := null; v91 := null; v92 := null; v93 := null; v94 := null; v95 := null; v96 := null; v97 := null;
+v98 := null; v99 := null; v9a := null; v9b := null; v9c := null; v9d := null; v9e := null; v9f := null;
+
+va0 := null; va1 := null; va2 := null; va3 := null; va4 := null; va5 := null; va6 := null; va7 := null;
+va8 := null; va9 := null; vaa := null; vab := null; vac := null; vad := null; vae := null; vaf := null;
+
+vb0 := null; vb1 := null; vb2 := null; vb3 := null; vb4 := null; vb5 := null; vb6 := null; vb7 := null;
+vb8 := null; vb9 := null; vba := null; vbb := null; vbc := null; vbd := null; vbe := null; vbf := null;
+
+vc0 := null; vc1 := null; vc2 := null; vc3 := null; vc4 := null; vc5 := null; vc6 := null; vc7 := null;
+vc8 := null; vc9 := null; vca := null; vcb := null; vcc := null; vcd := null; vce := null; vcf := null;
+
+vd0 := null; vd1 := null; vd2 := null; vd3 := null; vd4 := null; vd5 := null; vd6 := null; vd7 := null;
+vd8 := null; vd9 := null; vda := null; vdb := null; vdc := null; vdd := null; vde := null; vdf := null;
+
+ve0 := null; ve1 := null; ve2 := null; ve3 := null; ve4 := null; ve5 := null; ve6 := null; ve7 := null;
+ve8 := null; ve9 := null; vea := null; veb := null; vec := null; ved := null; vee := null; vef := null;
+
+vf0 := null; vf1 := null; vf2 := null; vf3 := null; vf4 := null; vf5 := null; vf6 := null; vf7 := null;
+vf8 := null; vf9 := null; vfa := null; vfb := null; vfc := null; vfd := null; vfe := null; vff := null;
+
+
+
+oop := nulls; // Error at 'oops': Too many local abl := nulles in function.
+}

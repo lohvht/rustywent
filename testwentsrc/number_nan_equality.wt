@@ -1,0 +1,1 @@
+nan := 0/0 // RuntimeError: unable to divide by zer

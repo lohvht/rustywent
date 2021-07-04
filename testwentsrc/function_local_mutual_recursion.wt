@@ -1,0 +1,7 @@
+{
+    func isEven(n) ::> if n == 0 ::> true else ::> isOdd(n - 1) // expect runtime error: Undefined variable 'isOdd'.
+    func isOdd(n) ::> if n == 0 ::> false else ::> isEven(n - 1)
+
+    print isOdd(4) // TODO: If comment out this, it will have a wrong error (isOdd not used)
+    print isEven(4)
+}

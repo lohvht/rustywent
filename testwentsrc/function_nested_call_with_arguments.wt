@@ -1,0 +1,7 @@
+func returnArg(arg) ::> arg
+
+func returnFunCallWithArg(fn, arg) ::> returnArg(fn)(arg)
+
+func printArg(arg) { print arg; }
+
+returnFunCallWithArg(printArg, 'hello world')

@@ -1,0 +1,7 @@
+// Only false and true are acceptable values for if-else cond
+if false {print "bad";} else {print "false";} // expect: false
+if null {print "bad";} else {print "null";} // RuntimeError: condition on if expression is expected to be a bool
+// Everything else is true.
+if true {print true;} // expect: true
+if 0 {print 0;} // RuntimeError: condition on if expression is expected to be a bool
+if "" {print "empty";} // RuntimeError: condition on if expression is expected to be a bool

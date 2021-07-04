@@ -1,0 +1,9 @@
+// Allowed, funcs are expressions in went
+v := if true ::> 'ok'
+else ::> func foo() ::> ''
+
+v2 := if false ::> 'ok'
+else ::> func foo() ::> ''
+
+print v // expect 'ok'
+print v2 // expect <func()>
